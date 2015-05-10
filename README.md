@@ -1,0 +1,1 @@
+# intel-academic-IoT-course
