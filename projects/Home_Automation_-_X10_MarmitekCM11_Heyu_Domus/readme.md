@@ -9,9 +9,13 @@ tar -xvzf heyu-2.11-rc1.tar.gz ; cd heyu-2.11-rc1
 # 2. Hardware :
 
 Plug CM11 on Edison USB port
-`lsusb`
+```
+lsusb
+```
 Bus 001 Device 007: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
-`ls /dev/ttyUSB0`
+```
+ls /dev/ttyUSB0
+```
 we have a serial port
 
 # 3. Config :
