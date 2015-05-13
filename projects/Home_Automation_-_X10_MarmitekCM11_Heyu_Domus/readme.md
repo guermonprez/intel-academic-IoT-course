@@ -1,3 +1,6 @@
+# Video :
+<https://www.youtube.com/watch?v=ABq8UwHoHbo&list=PLFBM-eCNdj6A5VSmOEjpn8XoiM88398B7&index=14>
+
 # 1. Software :
 
 download from http://heyu.tanj.com/download/
