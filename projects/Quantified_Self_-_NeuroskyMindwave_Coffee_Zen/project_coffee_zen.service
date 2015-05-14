@@ -1,0 +1,12 @@
+[Unit]
+Description=IoT Demo - Coffee or Zen
+After=mdns.service
+
+[Service]
+ExecStart=/bin/su root -c 'node /home/root/projects/Quantified_Self_-_NeuroskyMindwave_Coffee_Zen/coffee_or_zen.js'
+Restart=always
+RestartSec=10s
+Environment=NODE_PATH=/usr/lib/node_modules/
+
+[Install]
+WantedBy=default.target
