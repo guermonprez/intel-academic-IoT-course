@@ -1,13 +1,15 @@
-# Video :
+# Intel Academic IoT Project - Quantified Self with Neurosky Mindwave
+
+## Video :
 
 
-# 1. ENABLE BT
+## 1. ENABLE BT
 
 ```
 rfkill unblock bluetooth
 ```
 
-# 2. SCAN DEVICES
+## 2. SCAN DEVICES
 
 Remember to press the pair button when the scan is on.
 The pairing PIN number is not asked for this simple device.
@@ -25,7 +27,7 @@ Discovery started
 Discovery stopped
 ```
 
-# 3. PAIRING
+## 3. PAIRING
 
 ```
 [bluetooth]# pair 74:E5:43:D5:77:AA
@@ -34,7 +36,7 @@ Attempting to pair with 74:E5:43:D5:77:AA
 [bluetooth]# exit
 ```
 
-# 4. CREATE SERIAL PORT OVER BLUETOOTH
+## 4. CREATE SERIAL PORT OVER BLUETOOTH
 
 ```
 rfcomm bind 0 74:E5:43:D5:77:AA 1
@@ -42,14 +44,14 @@ ls /dev/rfcomm0
 ```
 There is now a functionnal `/dev/rfcomm0`
 
-# 5. NodeJS
+## 5. NodeJS
 
 See the NodeJS-Cylon code. To run the code locally :
 ```
 node coffee_or_zen.js
 ```
 
-# 6. Install as service
+## 6. Install as service
 
 When you are ready to install the demo as a system service :
 ```
