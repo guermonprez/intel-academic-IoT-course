@@ -51,7 +51,13 @@ See the NodeJS-Cylon code. To run the code locally :
 node coffee_or_zen.js
 ```
 
-## 6. Install as service
+## 6. Twitter
+
+By default, this code is sending tweets.
+You need to add your twitter settings at the bottom of the code (4 variables).
+If you don't want to send tweets, comment the 2 lines beginning with ```client.post```.
+
+## 7. Install as service
 
 When you are ready to install the demo as a system service :
 ```
