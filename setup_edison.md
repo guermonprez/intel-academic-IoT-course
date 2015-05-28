@@ -23,8 +23,9 @@ In this setup procedure, we'll use a linux PC with ubuntu 15.04. But you can wor
 
 After the initial setup procedure, we'll be able to connect to the board over the network very easily from any OS for software development.
 
-### Download the 2.1 image
+### Download the Intel Edison firmware
 
+Intel Edison® Board Firmware Software Release 2.1
 http://www.intel.com/support/edison/sb/CS-035180.htm
 
 ## PC setup and flash
@@ -43,6 +44,7 @@ apt-get install dfu-util
 
 ### Unpack the Intel Edison image and start flashing
 
+(replace XX-XX with your specific filename).
 ```
 mkdir edison-image
 cd edison-image
@@ -111,18 +113,21 @@ opkg update
 ```
 
 ### install packages from the repository
+```
 opkg install nano vim screen
 opkg install libmraa0 upm
 opkg install libusb-1.0-dev
 opkg install opencv opencv-dev opencv-apps
 opkg install libopencv-core-dev libopencv-core2.4 libopencv-calib3d-dev libopencv-calib3d2.4 libopencv-contrib-dev libopencv-contrib2.4 libopencv-features2d-dev libopencv-features2d2.4 libopencv-flann-dev libopencv-flann2.4 libopencv-gpu-dev libopencv-gpu2.4 libopencv-imgproc-dev libopencv-imgproc2.4 libopencv-legacy-dev libopencv-legacy2.4 libopencv-ml-dev libopencv-ml2.4 libopencv-nonfree-dev libopencv-nonfree2.4 libopencv-photo-dev libopencv-photo2.4 libopencv-stitching-dev libopencv-stitching2.4 libopencv-superres-dev libopencv-superres2.4 libopencv-video-dev libopencv-video2.4 libopencv-videostab-dev libopencv-videostab2.4  libopencv-highgui-dev  libopencv-highgui2.4 libopencv-objdetect2.4 libopencv-objdetect-dev opencv-staticdev
 opkg install alsa-server alsa-lib-dev alsa-dev alsa-utils-aconnect alsa-utils-speakertest alsa-utils-midi libsndfile-bin libsndfile-dev flex bison git
+```
 
 ## NodeJS configuration
 
 ### install NodeJS packages
 NodeJS has a special package management tool called npm.
 It's slow compared to opkg, as everything is compiled from sources.
+You don't need to install everything, only the first 6 lines are required for the first labs.
 ```
 npm cache clear
 npm install -g mraa
@@ -172,7 +177,9 @@ mkdir .ssh
 chmod go-rwx .ssh
 nano .ssh/authorized_keys2
 ```
-# paste, save, exit, retry ssh
+Paste, save, exit, retry ssh and notice the lack of password
+
+You can now go to the labs.
 
 
 
