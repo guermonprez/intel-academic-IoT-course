@@ -1,4 +1,4 @@
-# Custom setup procedure for Intel Galileo v1 and v2
+# Custom setup procedure for Intel Galileo v1/v2
 
 ## Before you start
 
@@ -13,6 +13,7 @@ The goal of this procedure is to use Intel Edison as a linux board directly, usi
 Instead of command line, you can also use the graphical user interfaces from :
 * Intel IoT SDK : https://software.intel.com/en-us/iot/downloads
 * Intel XDK for IoT Edition : https://software.intel.com/en-us/html5/xdk-iot
+* 
 You have a similar procedure for Intel Edison in the same folder.
 
 ### OS for setup, OS for development
@@ -28,13 +29,16 @@ In the embedded world, there's also eglibc (embedded) and uclibc (small embedded
 That's why you know which library was used to compile the distribution
 you use in order to know which binaries and repositories you can install later.
 
-For Galileo, the choice :
+For Galileo, you have the choice between :
 * "SD card" official image from Intel.
-Library : uclibc. Repository : http://repo.opkg.net/galileo/ (community)
+*  Library : uclibc.
+*  Repository : http://repo.opkg.net/galileo/ (community)
 * "ubilinux" image from emutex.
-Library : glibc. Repository : regular i586 Debian repositories.
+*  Library : glibc.
+*  Repository : regular i586 Debian repositories.
 * "IoT DdevKit" image from Intel Software.
-Library : eblibc. Repository : http://storage.tokor.org/pub/galileo (managed by Tokoro. Domo arigato Tokoro !)
+*  Library : eblibc.
+*  Repository : http://storage.tokor.org/pub/galileo (managed by Tokoro. Domo arigato Tokoro !)
 
 For this setup, we will use the IoT DevKit image, but without using the dev kit itself.
 
