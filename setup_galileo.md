@@ -99,7 +99,7 @@ fdisk /dev/mmcblk0
 # save, quit fdisk, reboot your galileo
 ```
 
-### Resize partition
+### Resize file system
 The size depends on your SD card. I had a 4G card.
 ```
 resize2fs /dev/mmcblk0p2 2000M
