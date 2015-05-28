@@ -8,6 +8,7 @@
 * Setup of Intel Edison and Intel Galileo : check the 2 readme in this folder and the videos (you'll need both).
 * Labs : simple IoT basics demonstrated in detail (analog and digital IO, PWM, SPI ...). Check the labs folder and videos !
 To download the labs from Edison or Galileo :
+
 ```wget https://github.com/guermonprez/intel-academic-IoT-course/archive/master.zip```
 * Project : real life IoT projects, explained in detail with code. A mix of old and new IoT protocols, web, analytics ... and more.
 
