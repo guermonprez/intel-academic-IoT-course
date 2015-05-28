@@ -9,11 +9,13 @@ https://www.youtube.com/playlist?list=PLFBM-eCNdj6A5VSmOEjpn8XoiM88398B7
 
 ### Command line vs IDEs
 
-The goal of this procedure is to use Intel Edison as a linux board directly, using command line without any other IDE. Any linux compatible language should work. But you can also use :
+The goal of this procedure is to use Intel Edison as a linux board directly, using command line without any other IDE. But you don't have to. It's advanced mode if you're familiar with linux and love command line.
+
+Instead of command line, you can also use the graphical user interfaces from :
 * Intel IoT SDK : https://software.intel.com/en-us/iot/downloads
 * Intel XDK for IoT Edition : https://software.intel.com/en-us/html5/xdk-iot
 
-You have a similar procedure for Intel Galileo.
+You have a similar procedure for Intel Galileo in the same folder.
 
 ### OS for setup, OS for development
 
