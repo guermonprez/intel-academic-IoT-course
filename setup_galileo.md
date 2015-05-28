@@ -31,14 +31,14 @@ you use in order to know which binaries and repositories you can install later.
 
 For Galileo, you have the choice between :
 * "SD card" official image from Intel.
-*  Library : uclibc.
-*  Repository : http://repo.opkg.net/galileo/ (community)
+  * Library : uclibc.
+  * Repository : http://repo.opkg.net/galileo/ (community)
 * "ubilinux" image from emutex.
-*  Library : glibc.
-*  Repository : regular i586 Debian repositories.
+  * Library : glibc.
+  * Repository : regular i586 Debian repositories.
 * "IoT DdevKit" image from Intel Software.
-*  Library : eblibc.
-*  Repository : http://storage.tokor.org/pub/galileo (managed by Tokoro. Domo arigato Tokoro !)
+  * Library : eblibc.
+  * Repository : http://storage.tokor.org/pub/galileo (managed by Tokoro. Domo arigato Tokoro !)
 
 For this setup, we will use the IoT DevKit image, but without using the dev kit itself.
 
