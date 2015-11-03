@@ -108,14 +108,14 @@ On Ubuntu we have apt-get, and on Yocto we have opkg.
 echo "src/gz all http://repo.opkg.net/edison/repo/all" > /etc/opkg/base-feeds.conf
 echo "src/gz edison http://repo.opkg.net/edison/repo/edison" >> /etc/opkg/base-feeds.conf
 echo "src/gz core2-32 http://repo.opkg.net/edison/repo/core2-32" >> /etc/opkg/base-feeds.conf
-echo "src mraa-upm http://iotdk.intel.com/repos/1.1/intelgalactic" > /etc/opkg/mraa-upm.conf
+echo "src mraa-upm http://iotdk.intel.com/repos/2.0/intelgalactic" > /etc/opkg/mraa-upm.conf
 opkg update
 ```
 
 ### install packages from the repository
 ```
 opkg install nano vim screen
-opkg install libmraa0 upm
+opkg install mraa upm
 opkg install libusb-1.0-dev
 opkg install opencv opencv-dev opencv-apps
 opkg install libopencv-core-dev libopencv-core2.4 libopencv-calib3d-dev libopencv-calib3d2.4 libopencv-contrib-dev libopencv-contrib2.4 libopencv-features2d-dev libopencv-features2d2.4 libopencv-flann-dev libopencv-flann2.4 libopencv-gpu-dev libopencv-gpu2.4 libopencv-imgproc-dev libopencv-imgproc2.4 libopencv-legacy-dev libopencv-legacy2.4 libopencv-ml-dev libopencv-ml2.4 libopencv-nonfree-dev libopencv-nonfree2.4 libopencv-photo-dev libopencv-photo2.4 libopencv-stitching-dev libopencv-stitching2.4 libopencv-superres-dev libopencv-superres2.4 libopencv-video-dev libopencv-video2.4 libopencv-videostab-dev libopencv-videostab2.4  libopencv-highgui-dev  libopencv-highgui2.4 libopencv-objdetect2.4 libopencv-objdetect-dev opencv-staticdev
