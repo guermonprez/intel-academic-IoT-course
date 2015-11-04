@@ -118,9 +118,8 @@ Please do NOT run ```opkg upgrade``` as it would try to update the kernel and pr
 opkg install nano vim screen diffutils
 opkg install mraa upm
 opkg install libusb-1.0-dev flex bison git
-opkg install opencv opencv-dev opencv-apps
-opkg install libopencv-core-dev libopencv-core2.4 libopencv-calib3d-dev libopencv-calib3d2.4 libopencv-contrib-dev libopencv-contrib2.4 libopencv-features2d-dev libopencv-features2d2.4 libopencv-flann-dev libopencv-flann2.4 libopencv-gpu-dev libopencv-gpu2.4 libopencv-imgproc-dev libopencv-imgproc2.4 libopencv-legacy-dev libopencv-legacy2.4 libopencv-ml-dev libopencv-ml2.4 libopencv-nonfree-dev libopencv-nonfree2.4 libopencv-photo-dev libopencv-photo2.4 libopencv-stitching-dev libopencv-stitching2.4 libopencv-superres-dev libopencv-superres2.4 libopencv-video-dev libopencv-video2.4 libopencv-videostab-dev libopencv-videostab2.4  libopencv-highgui-dev  libopencv-highgui2.4 libopencv-objdetect2.4 libopencv-objdetect-dev opencv-staticdev
-opkg install alsa-server alsa-lib-dev alsa-dev alsa-utils-aconnect alsa-utils-speakertest alsa-utils-midi libsndfile-bin libsndfile-dev
+opkg install opencv opencv-dev opencv-apps opencv-staticdev
+opkg install alsa-server alsa-lib-dev alsa-dev alsa-utils-aconnect alsa-utils-speakertest alsa-utils-midi libsndfile-bin libsndfile-dev espeak alsa-tools-dev
 ```
 
 ## NodeJS configuration
@@ -133,7 +132,7 @@ You don't need to install everything, only the first 6 lines are required for th
 npm cache clear
 npm update
 npm install -g mraa
-npm install -g iotkit iotkit-agent iotkit-comm
+npm install -g iotkit-agent iotkit-client
 npm install -g sleep
 npm install -g cylon
 npm install -g cylon-intel-iot
@@ -151,6 +150,10 @@ npm install -g cylon-mqtt
 npm install -g cylon-neurosky
 npm install -g cylon-opencv
 npm install -g cylon-speech
+npm install -g cylon-audio
+npm install -g cylon-bebop
+npm install -g cylon-hue
+npm install -g cylon-powerup
 npm install -g midi
 npm install -g smoothie
 npm install -g temporal
@@ -160,10 +163,9 @@ npm install -g bluetooth-obd
 npm install -g browserify
 npm install -g cli
 npm install -g rolling-spider
-npm install -g sleep
 ```
 
-AFTER you installed your packages, you can upgrade nodejs :
+AFTER you installed your packages, you can upgrade nodejs, but you may have problems updating the mraa package later if you do so. So update nodejs only if you need to. :
 ```
 opkg install nodejs nodejs-npm nodejs-dev
 ```
