@@ -55,6 +55,8 @@ unzip /home/paul/Downloads/edison-image-wwXX-XX.zip
 ### Plug the board 
 
 * plug the board as described in the video
+* note : USB2 only, no USB3. If you don't know, try them all. some recent thin laptops only have USB3 ports.
+* note : crappy USB cables are more common than you may imagine. If it does try another one (thick, shielded is best).
 * see progress of the flash script
 * notice the "edison" disk appearing.
 
