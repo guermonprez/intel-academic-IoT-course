@@ -160,6 +160,13 @@ npm install -g cylon-audio
 npm install -g cylon-bebop
 npm install -g cylon-hue
 npm install -g cylon-powerup
+npm install -g node-espeak
+npm install -g ovh
+npm install -g karotz
+npm install -g express-ifttt-webhook
+npm install -g node-red
+npm install -g sleep
+npm install -g gspeech-api
 npm install -g midi
 npm install -g smoothie
 npm install -g temporal
