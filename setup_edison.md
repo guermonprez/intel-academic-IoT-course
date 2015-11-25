@@ -77,6 +77,10 @@ screen /dev/ttyUSB0 115200
 We won't use the serial link, and focus on the faster network-over-USB instead :
 ```
 ifconfig
+# note : depending on your linux version,
+# the "usb network" interface between your PC and Edison
+# can be called "usb0" or a variable name like "enxaa8963bb00d9"
+# example : on ubuntu 15.04 it's usb0, on 15.10 it's "enx..."
 ifconfig usb0 192.168.2.1/24
 ssh 192.168.2.15
 ```
